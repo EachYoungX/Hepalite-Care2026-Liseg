@@ -160,6 +160,8 @@ experiments/**/results/
 
 # Documentation and tabular/serialized experiment outputs.
 *.md
+!README.md
+!docs/REPRODUCIBILITY.md
 *.csv
 *.tsv
 *.json
