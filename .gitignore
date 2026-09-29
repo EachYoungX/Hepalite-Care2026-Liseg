@@ -1,0 +1,190 @@
+# ============================================================
+# CARE2026 - local datasets / medical images
+# ============================================================
+dataset/
+datasets/
+data/
+raw/
+processed/
+test_input/
+test_output/
+artifacts/
+
+# Internal-only notes, audits, identity metadata, and submission records.
+# Nothing below internal_docs/ is eligible for a public commit or push.
+internal_docs/
+
+# Keep the Python data-loading package; the rules above target local data roots.
+!src/data/
+!src/data/**
+
+*.nii
+*.nii.gz
+*.dcm
+*.dicom
+
+# Large numpy arrays / generated medical data
+*.npy
+*.npz
+
+# ============================================================
+# Pseudo labels / predictions / generated outputs
+# ============================================================
+outputs/
+output/
+predictions/
+pseudo_labels/
+pseudo-labels/
+pseudo_quality_report/
+temp_predictions/
+submission/
+submissions/
+
+# Generated probability volumes and learned auxiliary outputs
+experiments/**/artifacts/cache/
+experiments/**/artifacts/training/**/visualizations/
+experiments/**/artifacts/zspan_presence/oof_probabilities/
+experiments/**/artifacts/zspan_presence/validation_probabilities/
+
+# ============================================================
+# Model checkpoints / weights
+# ============================================================
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.engine
+*.safetensors
+
+checkpoints/
+weights/
+models/checkpoints/
+
+# ============================================================
+# Docker images / archives / submissions
+# ============================================================
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+
+docker_image/
+docker_export/
+
+# ============================================================
+# Python / IDE / OS
+# ============================================================
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.venv/
+venv/
+env/
+
+.agents/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+*_Zone.Identifier
+
+# ============================================================
+# Logs / caches / experiment trackers
+# ============================================================
+*.log
+logs/
+cache/
+.cache/
+
+wandb/
+runs/
+tensorboard/
+lightning_logs/
+
+# ============================================================
+# Secrets / environment files
+# ============================================================
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.p12
+*.pfx
+
+credentials*
+secrets*
+token*
+
+# ============================================================
+# Strict code-only repository boundary
+#
+# The working directory intentionally keeps local CARE inputs, paper
+# material, internal notes, and experiment outputs.  None of those belong
+# in the repository created from this directory.
+# ============================================================
+publication/
+tmp/
+experiments/**/results/
+
+# Paper source, rendered paper files, figures, and build products.
+*.pdf
+*.tex
+*.bib
+*.bbl
+*.blg
+*.aux
+*.out
+*.toc
+*.lof
+*.lot
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.cls
+*.bst
+*.eps
+*.svg
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# Documentation and tabular/serialized experiment outputs.
+*.md
+*.csv
+*.tsv
+*.json
+*.yaml
+*.yml
+*.log
+*.txt
+!requirements*.txt
+
+# Additional medical-volume and checkpoint formats.
+*.mha
+*.mhd
+*.raw
+*.nrrd
+*.img
+*.hdr
+*.mgz
+*.gz
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.bin
+*.weights
+*.weights.h5
+*.pth_*
+*checkpoint*

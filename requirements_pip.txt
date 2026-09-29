@@ -1,0 +1,33 @@
+# CARE2026 Project Dependencies
+# Generated from code imports analysis
+# Python environment: care_env
+
+# Deep Learning Framework
+torch==2.5.1
+torchvision==0.20.1
+torchaudio==2.5.1
+ema-pytorch==0.7.9
+
+# Scientific Computing
+numpy==2.0.1
+scipy==1.15.3
+
+# Medical Imaging
+nibabel==5.4.2
+SimpleITK==2.5.4
+
+# Image Processing
+opencv-python==4.13.0.92
+scikit-image==0.25.2
+
+# Machine Learning
+scikit-learn==1.7.2
+
+# Segmentation Models
+segment-anything==1.0
+
+# Visualization
+matplotlib==3.10.8
+
+# Utilities
+tqdm==4.67.3
